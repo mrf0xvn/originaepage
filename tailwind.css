@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    button,
+    input,
+    select,
+    textarea {
+        @apply appearance-none bg-transparent border-0 outline-none;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+}
+
+:root {
+    --eldora-display-font-family: "Abhaya Libre SemiBold", Helvetica;
+    --eldora-display-font-size: 128px;
+    --eldora-display-font-style: normal;
+    --eldora-display-font-weight: 400;
+    --eldora-display-letter-spacing: 0px;
+    --eldora-display-line-height: 110.00000238418579%;
+    --eldora-h1-font-family: "Abhaya Libre SemiBold", Helvetica;
+    --eldora-h1-font-size: 96px;
+    --eldora-h1-font-style: normal;
+    --eldora-h1-font-weight: 400;
+    --eldora-h1-letter-spacing: 0px;
+    --eldora-h1-line-height: 100%;
+    --eldora-h2-font-family: "Abhaya Libre SemiBold", Helvetica;
+    --eldora-h2-font-size: 72px;
+    --eldora-h2-font-style: normal;
+    --eldora-h2-font-weight: 400;
+    --eldora-h2-letter-spacing: 0px;
+    --eldora-h2-line-height: 120.00000476837158%;
+    --eldora-h3-font-family: "Abhaya Libre", Helvetica;
+    --eldora-h3-font-size: 60px;
+    --eldora-h3-font-style: normal;
+    --eldora-h3-font-weight: 700;
+    --eldora-h3-letter-spacing: 0px;
+    --eldora-h3-line-height: 110.00000238418579%;
+    --eldora-h4-font-family: "Abhaya Libre SemiBold", Helvetica;
+    --eldora-h4-font-size: 48px;
+    --eldora-h4-font-style: normal;
+    --eldora-h4-font-weight: 400;
+    --eldora-h4-letter-spacing: 0px;
+    --eldora-h4-line-height: 48px;
+    --eldora-h5-font-family: "Abhaya Libre", Helvetica;
+    --eldora-h5-font-size: 32px;
+    --eldora-h5-font-style: normal;
+    --eldora-h5-font-weight: 400;
+    --eldora-h5-letter-spacing: 0px;
+    --eldora-h5-line-height: 120.00000476837158%;
+    --eldora-h6-font-family: "Abhaya Libre SemiBold", Helvetica;
+    --eldora-h6-font-size: 24px;
+    --eldora-h6-font-style: normal;
+    --eldora-h6-font-weight: 400;
+    --eldora-h6-letter-spacing: 0px;
+    --eldora-h6-line-height: 32px;
+    --eldora-text-base-font-family: "DM Sans", Helvetica;
+    --eldora-text-base-font-size: 16px;
+    --eldora-text-base-font-style: normal;
+    --eldora-text-base-font-weight: 400;
+    --eldora-text-base-letter-spacing: 0px;
+    --eldora-text-base-line-height: 139.9999976158142%;
+    --eldora-text-lg-font-family: "DM Sans", Helvetica;
+    --eldora-text-lg-font-size: 18px;
+    --eldora-text-lg-font-style: normal;
+    --eldora-text-lg-font-weight: 400;
+    --eldora-text-lg-letter-spacing: 0px;
+    --eldora-text-lg-line-height: 139.9999976158142%;
+    --eldora-text-sm-font-family: "DM Sans", Helvetica;
+    --eldora-text-sm-font-size: 14px;
+    --eldora-text-sm-font-style: normal;
+    --eldora-text-sm-font-weight: 400;
+    --eldora-text-sm-letter-spacing: 0px;
+    --eldora-text-sm-line-height: 20px;
+    --eldora-text-xl-font-family: "DM Sans", Helvetica;
+    --eldora-text-xl-font-size: 20px;
+    --eldora-text-xl-font-style: normal;
+    --eldora-text-xl-font-weight: 400;
+    --eldora-text-xl-letter-spacing: 0px;
+    --eldora-text-xl-line-height: 28px;
+    --eldora-text-xs-font-family: "DM Sans", Helvetica;
+    --eldora-text-xs-font-size: 12px;
+    --eldora-text-xs-font-style: normal;
+    --eldora-text-xs-font-weight: 400;
+    --eldora-text-xs-letter-spacing: 0px;
+    --eldora-text-xs-line-height: 16px;
+    --eldoracreambase: rgba(239, 235, 229, 1);
+    --eldoracreamdark: rgba(221, 213, 200, 1);
+    --eldoracreamlight: rgba(250, 248, 246, 1);
+    --eldoracreammid: rgba(245, 242, 238, 1);
+    --eldoracreamwhite: rgba(255, 255, 255, 1);
+    --eldoragoldbase: rgba(190, 151, 91, 1);
+    --eldoragolddark: rgba(154, 120, 64, 1);
+    --eldoragoldlight: rgba(212, 176, 122, 1);
+    --eldoragoldpale: rgba(232, 212, 176, 1);
+    --eldoranavybase: rgba(24, 39, 64, 1);
+    --eldoranavydark: rgba(14, 25, 39, 1);
+    --eldoranavylight: rgba(58, 90, 140, 1);
+    --eldoranavymid: rgba(36, 60, 95, 1);
+    --eldoranavymuted: rgba(138, 154, 178, 1);
+    --eldoraslate-100: rgba(241, 245, 249, 1);
+    --eldoraslate-200: rgba(226, 232, 240, 1);
+    --eldoraslate-300: rgba(203, 213, 225, 1);
+    --eldoraslate-400: rgba(148, 163, 184, 1);
+    --eldoraslate-50: rgba(248, 250, 252, 1);
+    --eldoraslate-500: rgba(100, 116, 139, 1);
+    --eldoraslate-600: rgba(71, 85, 105, 1);
+    --eldoraslate-700: rgba(51, 65, 85, 1);
+    --eldoraslate-800: rgba(30, 41, 59, 1);
+    --eldoraslate-900: rgba(15, 23, 42, 1);
+    --eldoraslate-950: rgba(2, 6, 23, 1);
+}
+
+:root {
+    --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+    animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+    animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+    animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+    animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+    animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+    animation: var(--animate-spin);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes image-glow {
+    0% {
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+    }
+
+    10% {
+        opacity: 0.7;
+        animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+    }
+
+    to {
+        opacity: 0.4;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes shimmer {
+
+    0%,
+    90%,
+    to {
+        background-position: calc(-100% - var(--shimmer-width)) 0;
+    }
+
+    30%,
+    60% {
+        background-position: calc(100% + var(--shimmer-width)) 0;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+@keyframes marquee-vertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(calc(-100% - var(--gap)));
+    }
+}
