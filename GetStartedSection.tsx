@@ -59,12 +59,12 @@ export const GetStartedSection = (): JSX.Element => {
                             Let's get started
                         </h2>
 
-                        <button className="inline-flex items-center justify-between w-fit gap-4 pl-5 pr-1 py-1 bg-white rounded-full hover:bg-gray-200 transition-colors cursor-pointer border-none shrink-0 group">
-                            <span className="font-['Inter_Tight-Medium',Helvetica] font-medium text-black text-base md:text-lg whitespace-nowrap">
+                        <button className="btn-primary group">
+                            <span className="font-inter-tight font-semibold text-black text-base md:text-lg whitespace-nowrap">
                                 Book a call now
                             </span>
                             <div className="flex items-center justify-center w-[38px] h-[38px] bg-black rounded-full shrink-0">
-                                <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" color="white" />
+                                <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1 arrow-pulse" color="white" />
                             </div>
                         </button>
                     </div>
@@ -94,7 +94,7 @@ export const GetStartedSection = (): JSX.Element => {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 p-6 lg:p-8 w-full bg-[#252525] border border-[#d7d7d7] shadow-sm relative ${index !== 0 ? "-mt-4 lg:-mt-6" : ""} ${card.isLast ? "rounded-3xl" : "rounded-t-3xl sm:rounded-3xl hover:-translate-y-1 transition-transform z-10"}`}
+                            className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 p-6 lg:p-8 w-full bg-[#252525] border border-[#d7d7d7] shadow-sm relative ${index !== 0 ? "-mt-4 lg:-mt-6" : ""} ${card.isLast ? "rounded-3xl" : "rounded-t-3xl sm:rounded-3xl"} card-soft`}
                             style={{ zIndex: 10 + index }}
                         >
                             <h3 className="font-['Inter_Tight-SemiBold',Helvetica] font-semibold text-white text-xl lg:text-2xl w-full sm:w-2/5 shrink-0">

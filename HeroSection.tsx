@@ -9,6 +9,7 @@ import vector6 from "./Vector-6.svg";
 import vector7 from "./Vector-7.svg";
 import vector from "./Vector.svg";
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 const navLinks = ["Service", "Model", "Team"];
 
@@ -104,7 +105,7 @@ export const HeroSection = (): JSX.Element => {
                 >
                     {/* Middle Content */}
                     <motion.div className="flex flex-col w-full xl:max-w-[1200px]" variants={itemVariants}>
-                        <p className="font-['Inter_Tight-Regular',Helvetica] font-normal text-white text-[24px] sm:text-[32px] md:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.2] tracking-tight">
+                        <p className="font-inter-tight text-white/90 text-[clamp(36px,6.5vw,54px)] leading-[1.15] tracking-tight max-w-[820px]">
                             Important initiatives get stuck due to a lack of capacity.<br className="hidden xl:block"/>
                             From "we should do this" to "it's live". We assemble the<br className="hidden xl:block"/>
                             team, manage the work, and move your business<br className="hidden xl:block"/>
@@ -112,12 +113,12 @@ export const HeroSection = (): JSX.Element => {
                         </p>
                         
                         <div className="mt-8 md:mt-12">
-                            <button className="flex items-center gap-4 pl-6 pr-2 py-2 bg-white rounded-full hover:scale-105 transition-transform w-fit group">
-                                <span className="font-['Inter_Tight-Medium',Helvetica] font-medium text-black text-sm md:text-base">
+                            <button className="btn-primary btn-hero group">
+                                <span className="font-inter-tight font-semibold text-black text-sm md:text-base">
                                     Book a meeting
                                 </span>
                                 <div className="bg-black text-white rounded-full p-2.5 flex items-center justify-center">
-                                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" color="currentColor" />
+                                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5 arrow-pulse-strong" color="currentColor" />
                                 </div>
                             </button>
                         </div>
@@ -130,12 +131,15 @@ export const HeroSection = (): JSX.Element => {
                         </h1>
                         
                         <div className="flex items-center justify-between w-full mt-6 md:mt-8 pb-4 md:pb-6">
-                            <span className="font-['Inter_Tight-Regular',Helvetica] text-white/60 text-xs sm:text-sm">
+                            <span className="font-['Inter_Tight-Regular',Helvetica] text-white/70 text-xs sm:text-sm">
                                 2026 All Rights Reserved
                             </span>
-                            <span className="font-['Inter_Tight-Regular',Helvetica] text-white/60 text-xs sm:text-sm">
-                                {'{Scroll down}'}
-                            </span>
+                            <div className="flex items-center gap-2 text-white/70">
+                                <div className="flex h-8 w-5 items-start justify-center rounded-full border border-white/35 pt-1.5">
+                                    <span className="h-2.5 w-1 rounded-full bg-white/75 animate-pulse" />
+                                </div>
+                                <ChevronDown className="h-4 w-4 animate-bounce text-white/75" strokeWidth={1.75} />
+                            </div>
                         </div>
                     </motion.div>
                 </motion.div>

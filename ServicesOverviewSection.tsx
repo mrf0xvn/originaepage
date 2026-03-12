@@ -70,7 +70,7 @@ export const ServicesOverviewSection = (): JSX.Element => {
                     {serviceCards.map((card, index) => (
                         <motion.div
                             key={card.number}
-                            className={`flex flex-col gap-6 p-8 lg:p-10 rounded-3xl h-full ${card.bgCard} hover:-translate-y-2 hover:shadow-xl transition-all duration-300 group`}
+                            className={`flex flex-col gap-6 p-8 lg:p-10 rounded-3xl h-full ${card.bgCard} card-soft group`}
                             variants={cardVariants}
                             initial="hidden"
                             whileInView="show"

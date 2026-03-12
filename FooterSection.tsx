@@ -41,23 +41,23 @@ export const FooterSection = (): JSX.Element => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-                className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-16 lg:py-24 flex flex-col gap-24 lg:gap-32"
+                className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-14 lg:py-20 flex flex-col gap-16 lg:gap-20"
             >
                 
                 {/* Top Section */}
-                <div className="flex flex-col md:flex-row items-start justify-between gap-16">
+                <div className="grid w-full grid-cols-1 gap-14 border-b border-white/10 pb-14 lg:grid-cols-[0.9fr_1.4fr] lg:gap-20 lg:pb-16">
                     {/* Services */}
-                    <div className="flex flex-col gap-6 lg:w-1/3">
-                        <motion.h4 variants={itemVariants} className="font-['Inter_Tight-SemiBold',Helvetica] font-semibold text-[#8c8c8c] text-sm lg:text-base tracking-[0.2em] uppercase mb-4">
-                            SERVICES
+                    <div className="flex flex-col gap-6">
+                        <motion.h4 variants={itemVariants} className="font-inter-tight font-semibold text-[#71717A] text-xs lg:text-sm tracking-[0.14em] uppercase">
+                            Services
                         </motion.h4>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-2.5 lg:gap-3">
                             {services.map((service, index) => (
                                 <motion.a
                                     variants={itemVariants}
                                     key={index}
                                     href="#"
-                                    className="font-['Inter_Tight-Regular',Helvetica] font-normal text-white/90 text-lg lg:text-xl hover:text-white hover:translate-x-2 transition-all duration-300 whitespace-nowrap w-fit"
+                                    className="font-inter-tight font-normal text-[#F5F5F5] text-base lg:text-[18px] hover:text-white hover:translate-x-1.5 transition-all duration-300 whitespace-nowrap w-fit"
                                 >
                                     {service}
                                 </motion.a>
@@ -66,9 +66,9 @@ export const FooterSection = (): JSX.Element => {
                     </div>
 
                     {/* Contact & Socials */}
-                    <div className="flex flex-col w-full md:w-2/3 lg:max-w-xl gap-8">
-                        <motion.div variants={itemVariants} className="flex items-center pb-2">
-                            <p className="font-['Roboto-Regular',Helvetica] font-normal text-white/70 text-lg lg:text-xl tracking-wide uppercase">
+                    <div className="flex flex-col w-full gap-8 lg:gap-10">
+                        <motion.div variants={itemVariants} className="flex items-center">
+                            <p className="font-inter-tight font-medium text-[#71717A] text-xs sm:text-sm tracking-[0.12em] uppercase">
                                 Let's get in touch
                             </p>
                         </motion.div>
@@ -81,10 +81,12 @@ export const FooterSection = (): JSX.Element => {
                                         variants={itemVariants}
                                         href={item.href}
                                         key={index}
-                                        className={`flex items-center gap-6 py-6 w-full group ${index === 0 ? "border-b border-[#9d9d9e]/30" : ""}`}
+                                        className={`flex items-center gap-4 sm:gap-5 py-5 sm:py-6 w-full group ${index === 0 ? "border-b border-[#9d9d9e]/30" : ""}`}
                                     >
-                                        <IconComp className="w-8 h-8 text-white/70 group-hover:text-white group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300" />
-                                        <span className="font-['Inter_Tight-Regular',Helvetica] font-light text-white text-3xl sm:text-4xl lg:text-5xl truncate group-hover:opacity-80 transition-opacity">
+                                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] transition-colors duration-300 group-hover:bg-white/[0.08]">
+                                            <IconComp className="w-5 h-5 text-[#A1A1AA] group-hover:text-[#F5F5F5] transition-all duration-300" />
+                                        </div>
+                                        <span className="font-inter-tight font-normal text-[#F5F5F5] text-[clamp(22px,3.2vw,38px)] leading-[1.06] tracking-tight truncate group-hover:text-white transition-colors">
                                             {item.text}
                                         </span>
                                     </motion.a>
@@ -95,37 +97,37 @@ export const FooterSection = (): JSX.Element => {
                         <motion.a 
                             href="#"
                             variants={itemVariants} 
-                            className="flex items-center justify-between w-full py-6 mt-4 border-t border-[#9d9d9e]/30 group cursor-pointer"
+                            className="flex items-center justify-between w-full py-5 mt-2 border-t border-[#9d9d9e]/30 group cursor-pointer"
                         >
-                            <span className="font-['Roboto-Regular',Helvetica] font-light text-white text-2xl group-hover:text-gray-300 transition-colors">
+                            <span className="font-inter-tight font-normal text-[#F5F5F5] text-lg sm:text-xl group-hover:text-white transition-colors">
                                 Social media
                             </span>
-                            <div className="p-2 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
-                                <ArrowUpRight className="w-6 h-6 text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                            <div className="p-2.5 rounded-full border border-white/10 bg-white/[0.04] group-hover:bg-white/[0.08] transition-colors">
+                                <ArrowUpRight className="w-5 h-5 text-[#A1A1AA] group-hover:text-[#F5F5F5] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                             </div>
                         </motion.a>
                     </div>
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-col items-center gap-12 lg:gap-20 pt-10">
+                <div className="flex flex-col items-center gap-12 lg:gap-16 pt-2">
                     <motion.div variants={itemVariants} className="flex items-center justify-center w-full">
-                        <p className="font-['Inter_Tight-Medium',Helvetica] font-medium text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/40 text-6xl md:text-[100px] lg:text-[150px] leading-[0.9] tracking-tighter text-center lg:text-left drop-shadow-2xl">
+                        <p className="font-['Inter_Tight-Medium',Helvetica] font-medium text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/40 text-[clamp(42px,8vw,96px)] leading-[0.92] tracking-tighter text-center drop-shadow-2xl">
                             We solve it<br className="lg:hidden" /> for you
                         </p>
                     </motion.div>
 
-                    <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-between w-full gap-6 px-4 pt-8 border-t border-white/10">
-                        <div className="flex items-center gap-2">
+                    <motion.div variants={itemVariants} className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between w-full pt-8 border-t border-white/10">
+                        <div className="flex items-center gap-2.5">
                              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                             <span className="text-white/60 text-sm font-['Roboto-Regular',Helvetica]">All systems operational</span>
+                             <span className="text-[#A1A1AA] text-sm font-inter-tight">All systems operational</span>
                         </div>
-                        <div className="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-10">
+                        <div className="flex flex-wrap justify-start sm:justify-end gap-x-6 gap-y-3 sm:gap-x-8">
                             {footerLinks.map((link, index) => (
                                 <a
                                     href="#"
                                     key={index}
-                                    className={`font-['Inter_Tight-Regular',Helvetica] font-normal text-white/50 text-sm md:text-base hover:text-white transition-colors ${link.underline ? "underline underline-offset-4 decoration-white/30 hover:decoration-white" : ""}`}
+                                    className={`font-inter-tight font-normal text-[#A1A1AA] text-sm md:text-[15px] hover:text-[#F5F5F5] transition-colors ${link.underline ? "underline underline-offset-4 decoration-white/30 hover:decoration-white" : ""}`}
                                 >
                                     {link.label}
                                 </a>

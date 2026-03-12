@@ -58,7 +58,7 @@ const renderCards = (cards: string[], dark: boolean) => {
                 <motion.div
                     key={idx}
                     variants={cardVariants}
-                    className={`flex flex-col items-center justify-center p-6 lg:p-10 min-h-[140px] rounded-3xl border ${cardBorder} ${cardBg} hover:opacity-[0.85] hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-md cursor-default`}
+                    className={`flex flex-col items-center justify-center p-6 lg:p-10 min-h-[140px] rounded-3xl border ${cardBorder} ${cardBg} card-soft shadow-sm cursor-default`}
                 >
                     <p className={`font-['Inter_Tight-Regular',Helvetica] ${textColor} text-base lg:text-lg text-center leading-relaxed whitespace-pre-line`}>
                         {text}

@@ -23,7 +23,7 @@ export const CallToActionSection = (): JSX.Element => {
             <div 
                 className="absolute inset-0 w-full h-full z-0"
                 style={{ 
-                    background: 'linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,1) 69%, rgba(0,0,0,1) 100%)' 
+                    background: 'linear-gradient(180deg, rgba(0,0,0,0.05) 35%, rgba(0,0,0,0.72) 70%, rgba(0,0,0,0.9) 100%)' 
                 }}
             />
 
@@ -46,15 +46,13 @@ export const CallToActionSection = (): JSX.Element => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "0px 0px -50px 0px" }}
                     transition={{ duration: 0.5, delay: 0.2, type: "spring", stiffness: 100 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center justify-between w-fit gap-4 pl-6 pr-1.5 py-1.5 bg-white rounded-full hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 cursor-pointer group"
+                    className="btn-primary cursor-pointer group"
                 >
-                    <span className="font-['Inter_Tight-Medium',Helvetica] font-medium text-black text-sm md:text-base whitespace-nowrap">
+                    <span className="font-inter-tight font-semibold text-black text-sm md:text-base whitespace-nowrap">
                         Book a meeting
                     </span>
                     <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-black rounded-full shrink-0">
-                        <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" color="white" />
+                        <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 arrow-pulse" color="white" />
                     </div>
                 </motion.button>
             </div>
