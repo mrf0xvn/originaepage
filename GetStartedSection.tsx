@@ -74,7 +74,7 @@ export const GetStartedSection = (): JSX.Element => {
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col py-6 lg:py-8 w-full ${step.hasBorder ? "border-b border-[#8c8c8c]" : ""}`}
+                                className={`flex flex-col py-6 lg:py-8 w-full ${step.hasBorder ? "border-b border-[#A1A1AA]" : ""}`}
                             >
                                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-10 lg:gap-14">
                                     <span className="font-['Inter_Tight-Regular',Helvetica] text-white text-xl lg:text-2xl opacity-70 whitespace-nowrap">
@@ -94,7 +94,7 @@ export const GetStartedSection = (): JSX.Element => {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 p-6 lg:p-8 w-full bg-[#252525] border border-[#d7d7d7] shadow-sm relative ${index !== 0 ? "-mt-4 lg:-mt-6" : ""} ${card.isLast ? "rounded-3xl" : "rounded-t-3xl sm:rounded-3xl"} card-soft`}
+                            className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 p-6 lg:p-8 w-full bg-[#252525] border border-[#D4D4D8] shadow-sm relative ${index !== 0 ? "-mt-4 lg:-mt-6" : ""} ${card.isLast ? "rounded-3xl" : "rounded-t-3xl sm:rounded-3xl"} card-soft`}
                             style={{ zIndex: 10 + index }}
                         >
                             <h3 className="font-['Inter_Tight-SemiBold',Helvetica] font-semibold text-white text-xl lg:text-2xl w-full sm:w-2/5 shrink-0">

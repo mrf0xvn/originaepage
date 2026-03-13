@@ -25,13 +25,13 @@ const mandateCards = [
         bg: "bg-white",
         titleColor: "text-black",
         descColor: "text-black",
-        borderClass: "border border-[#d7d7d7]",
+        borderClass: "border border-[#D4D4D8]",
         zIndex: "z-10",
     },
     {
         title: "Pilot /\nMVP-first",
         description: "For recurring functions that\nneed consistent execution.",
-        bg: "bg-[#f0ebea]",
+        bg: "bg-[#F2F2F2]",
         titleColor: "text-black",
         descColor: "text-black",
         borderClass: "border border-transparent",
@@ -40,7 +40,7 @@ const mandateCards = [
     {
         title: "Ongoing manage mandates",
         description: "Start with a smaller, time-bound mandate to prove value.",
-        bg: "bg-[#e54e05]",
+        bg: "bg-[#18181B]",
         titleColor: "text-white",
         descColor: "text-white",
         borderClass: "border border-transparent",
@@ -73,7 +73,7 @@ export const ServiceModelSection = (): JSX.Element => {
             <div className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-16 lg:py-20 flex flex-col gap-16">
                 
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-[#7b7b7b]">
+                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-[#A1A1AA]">
                     <div className="flex flex-col gap-4 lg:gap-6 max-w-lg">
                         <p className="font-['Inter_Tight-SemiBold',Helvetica] font-semibold text-black text-xl lg:text-2xl tracking-[0] uppercase">
                             OUR SERVICE MODEL:
@@ -108,7 +108,7 @@ export const ServiceModelSection = (): JSX.Element => {
                             const isLast = index === serviceSteps.length - 1;
 
                             return (
-                                <motion.div variants={itemVariants} key={index} className={`flex flex-col py-6 lg:py-8 w-full ${!isLast ? "border-b border-[#8c8c8c]" : ""}`}>
+                                <motion.div variants={itemVariants} key={index} className={`flex flex-col py-6 lg:py-8 w-full ${!isLast ? "border-b border-[#A1A1AA]" : ""}`}>
                                     <button
                                         className="flex items-center justify-between w-full bg-transparent border-none cursor-pointer p-0 group"
                                         onClick={() => handleToggle(index)}

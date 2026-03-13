@@ -23,7 +23,7 @@
     }
 
     a, button {
-        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4B07A];
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
     }
 }
 
@@ -43,13 +43,13 @@
         gap: 0.75rem;
         padding: 0.75rem 1.25rem;
         border-radius: 9999px;
-        background: #BE975B;
-        color: #0d0d0d;
+        background: #FFFFFF;
+        color: #0a0a0a;
         font-weight: 600;
         font-size: 1rem;
         letter-spacing: -0.01em;
         transition: all 200ms ease-out;
-        box-shadow: 0 10px 24px -14px rgba(0,0,0,0.55);
+        box-shadow: 0 10px 24px -14px rgba(0,0,0,0.35);
         isolation: isolate;
     }
     .btn-primary::before {
@@ -58,14 +58,14 @@
         inset: 0;
         border-radius: inherit;
         padding: 1px;
-        background: linear-gradient(115deg, rgba(255,255,255,0) 28%, rgba(255,255,255,0.08) 42%, rgba(255,255,255,0.98) 50%, rgba(255,255,255,0.08) 58%, rgba(255,255,255,0) 72%);
+        background: linear-gradient(115deg, rgba(255,255,255,0) 28%, rgba(255,255,255,0.15) 42%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.15) 58%, rgba(255,255,255,0) 72%);
         background-size: 220% 220%;
         background-position: 160% 50%;
         -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
         animation: border-streak 3.2s linear infinite;
-        opacity: 0.9;
+        opacity: 0.6;
         pointer-events: none;
     }
     .btn-primary::after {
@@ -73,36 +73,36 @@
         position: absolute;
         inset: -8px;
         border-radius: inherit;
-        background: radial-gradient(circle at center, rgba(255,255,255,0.18), rgba(255,255,255,0.05) 45%, transparent 72%);
+        background: radial-gradient(circle at center, rgba(255,255,255,0.12), rgba(255,255,255,0.04) 45%, transparent 72%);
         filter: blur(10px);
-        opacity: 0.22;
+        opacity: 0.18;
         pointer-events: none;
         z-index: -1;
         transition: opacity 200ms ease-out;
     }
     .btn-primary:hover {
-        background: #D4B07A;
+        background: #F4F4F5;
         transform: translateY(-2px);
-        box-shadow: 0 18px 32px -18px rgba(0,0,0,0.55);
+        box-shadow: 0 18px 32px -18px rgba(0,0,0,0.4);
     }
     .btn-primary:active {
         transform: translateY(0);
-        box-shadow: 0 10px 18px -16px rgba(0,0,0,0.55);
+        box-shadow: 0 10px 18px -16px rgba(0,0,0,0.4);
     }
     .btn-primary:hover::after {
-        opacity: 0.5;
+        opacity: 0.35;
     }
 
     .btn-hero::before {
         padding: 1.25px;
-        opacity: 1;
+        opacity: 0.8;
         animation-duration: 2.2s;
     }
     .btn-hero::after {
         inset: -10px;
-        background: radial-gradient(circle at center, rgba(255,255,255,0.32), rgba(255,255,255,0.1) 46%, transparent 75%);
+        background: radial-gradient(circle at center, rgba(255,255,255,0.2), rgba(255,255,255,0.06) 46%, transparent 75%);
         filter: blur(14px);
-        opacity: 0.48;
+        opacity: 0.35;
     }
 
     .card-soft {
@@ -194,31 +194,12 @@
     --eldora-text-xs-font-weight: 400;
     --eldora-text-xs-letter-spacing: 0px;
     --eldora-text-xs-line-height: 16px;
-    --eldoracreambase: rgba(239, 235, 229, 1);
-    --eldoracreamdark: rgba(221, 213, 200, 1);
-    --eldoracreamlight: rgba(250, 248, 246, 1);
-    --eldoracreammid: rgba(245, 242, 238, 1);
-    --eldoracreamwhite: rgba(255, 255, 255, 1);
-    --eldoragoldbase: rgba(190, 151, 91, 1);
-    --eldoragolddark: rgba(154, 120, 64, 1);
-    --eldoragoldlight: rgba(212, 176, 122, 1);
-    --eldoragoldpale: rgba(232, 212, 176, 1);
-    --eldoranavybase: rgba(24, 39, 64, 1);
-    --eldoranavydark: rgba(14, 25, 39, 1);
-    --eldoranavylight: rgba(58, 90, 140, 1);
-    --eldoranavymid: rgba(36, 60, 95, 1);
-    --eldoranavymuted: rgba(138, 154, 178, 1);
-    --eldoraslate-100: rgba(241, 245, 249, 1);
-    --eldoraslate-200: rgba(226, 232, 240, 1);
-    --eldoraslate-300: rgba(203, 213, 225, 1);
-    --eldoraslate-400: rgba(148, 163, 184, 1);
-    --eldoraslate-50: rgba(248, 250, 252, 1);
-    --eldoraslate-500: rgba(100, 116, 139, 1);
-    --eldoraslate-600: rgba(71, 85, 105, 1);
-    --eldoraslate-700: rgba(51, 65, 85, 1);
-    --eldoraslate-800: rgba(30, 41, 59, 1);
-    --eldoraslate-900: rgba(15, 23, 42, 1);
-    --eldoraslate-950: rgba(2, 6, 23, 1);
+    --surface-light: #F2F2F2;
+    --surface-mid: #E4E4E7;
+    --border-default: #D4D4D8;
+    --text-muted: #71717A;
+    --text-subtle: #A1A1AA;
+    --accent-dark: #18181B;
 }
 
 :root {

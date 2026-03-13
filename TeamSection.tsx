@@ -7,19 +7,19 @@ import teamMemberImg from "./Team member.png";
 const teamMembers = [
     {
         name: "Theo Rame",
-        gradient: "from-transparent to-[#f0ebea]",
+        gradient: "from-transparent to-[#F2F2F2]",
         linkedinUrl: "#",
         image: theoRameImg,
     },
     {
         name: "Tracy",
-        gradient: "from-transparent to-[#f0ebea]",
+        gradient: "from-transparent to-[#F2F2F2]",
         linkedinUrl: "#",
         image: tracyImg,
     },
     {
         name: "Our team",
-        gradient: "from-transparent to-[#f0ebea]",
+        gradient: "from-transparent to-[#F2F2F2]",
         linkedinUrl: "#",
         span: true,
         image: teamMemberImg,
@@ -50,7 +50,7 @@ export const TeamSection = (): JSX.Element => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-[#7b7b7b]"
+                    className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-[#A1A1AA]"
                 >
                     <div className="flex flex-col gap-4 lg:gap-6 max-w-lg">
                         <p className="font-['Inter_Tight-SemiBold',Helvetica] font-semibold text-black text-xl lg:text-2xl tracking-[0] uppercase">
@@ -83,7 +83,7 @@ export const TeamSection = (): JSX.Element => {
                         <motion.div
                             key={member.name}
                             variants={itemVariants}
-                            className={`relative flex flex-col justify-end p-6 rounded-3xl overflow-hidden bg-[#f0ebea] h-[350px] md:h-[450px] shadow-sm hover:shadow-2xl transition-all duration-500 group cursor-pointer ${member.span ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'}`}
+                            className={`relative flex flex-col justify-end p-6 rounded-3xl overflow-hidden bg-[#F2F2F2] h-[350px] md:h-[450px] shadow-sm hover:shadow-2xl transition-all duration-500 group cursor-pointer ${member.span ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'}`}
                         >
                             {member.image && (
                                 <img 

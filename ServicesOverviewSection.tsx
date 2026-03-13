@@ -8,24 +8,24 @@ const serviceCards = [
         number: "01",
         title: "Outcome-driven",
         description: "We set clear objectives and measurable success metrics to ensure every project delivers real, trackable results.",
-        bgCard: "bg-white border border-[#b1b1b1] shadow-sm",
-        bgBadge: "bg-[#f0ebea]",
+        bgCard: "bg-white border border-[#D4D4D8] shadow-sm",
+        bgBadge: "bg-[#E4E4E7]",
         textBadge: "text-black",
     },
     {
         number: "02",
         title: "Fully Managed",
         description: "Led by Swiss-based leadership, we provide structured, end-to-end management with full transparency and accountability.",
-        bgCard: "bg-[#f0ebea] border border-transparent shadow-sm",
-        bgBadge: "bg-[#e54e05]",
+        bgCard: "bg-[#F2F2F2] border border-transparent shadow-sm",
+        bgBadge: "bg-[#18181B]",
         textBadge: "text-white",
     },
     {
         number: "03",
         title: "Specialized",
         description: "Our degree-educated professionals combine strong academic foundations with hands-on expertise to deliver high-quality work.",
-        bgCard: "bg-white border border-[#b1b1b1] shadow-sm",
-        bgBadge: "bg-[#f0ebea]",
+        bgCard: "bg-white border border-[#D4D4D8] shadow-sm",
+        bgBadge: "bg-[#E4E4E7]",
         textBadge: "text-black",
     },
 ];
@@ -45,7 +45,7 @@ export const ServicesOverviewSection = (): JSX.Element => {
             <div className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-16 lg:py-20 flex flex-col gap-16">
                 
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-[#7b7b7b]">
+                <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-[#A1A1AA]">
                     <div className="flex flex-col gap-4 lg:gap-6 max-w-lg">
                         <p className="font-['Inter_Tight-SemiBold',Helvetica] font-semibold text-black text-lg lg:text-2xl tracking-[0] uppercase">
                             OUR ANSWER:

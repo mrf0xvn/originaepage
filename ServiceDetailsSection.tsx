@@ -49,7 +49,7 @@ const cardVariants: Variants = {
 
 const renderCards = (cards: string[], dark: boolean) => {
     const cardBg = dark ? "bg-[#252525]" : "bg-white";
-    const cardBorder = dark ? "border-[#acacac]" : "border-[#b1b1b1]";
+    const cardBorder = dark ? "border-[#A1A1AA]" : "border-[#D4D4D8]";
     const textColor = dark ? "text-white" : "text-black";
 
     return (
@@ -80,7 +80,7 @@ export const ServiceDetailsSection = (): JSX.Element => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-                    className="relative z-10 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-[#f0ebea] rounded-t-3xl sm:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                    className="relative z-10 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-[#F2F2F2] rounded-t-3xl sm:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/5">
                         <motion.h2 variants={cardVariants} className="font-['Inter_Tight-Regular',Helvetica] text-black text-4xl lg:text-6xl pt-2">
@@ -120,7 +120,7 @@ export const ServiceDetailsSection = (): JSX.Element => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-                    className="relative z-30 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-[#f0ebea] sm:rounded-3xl rounded-t-3xl shadow-lg -mt-6 hover:shadow-xl transition-shadow duration-300"
+                    className="relative z-30 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-[#F2F2F2] sm:rounded-3xl rounded-t-3xl shadow-lg -mt-6 hover:shadow-xl transition-shadow duration-300"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/5">
                         <motion.h2 variants={cardVariants} className="font-['Inter_Tight-Regular',Helvetica] text-black text-4xl lg:text-6xl pt-2">
