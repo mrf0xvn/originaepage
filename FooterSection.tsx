@@ -41,11 +41,11 @@ export const FooterSection = (): JSX.Element => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-                className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-14 lg:py-20 flex flex-col gap-16 lg:gap-20"
+                className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-14 lg:py-20 flex flex-col gap-14 lg:gap-16"
             >
                 
                 {/* Top Section */}
-                <div className="grid w-full grid-cols-1 gap-14 border-b border-white/10 pb-14 lg:grid-cols-[0.9fr_1.4fr] lg:gap-20 lg:pb-16">
+                <div className="grid w-full grid-cols-1 gap-12 border-b border-white/10 pb-14 lg:grid-cols-[1fr_1.2fr] lg:gap-16 lg:pb-16 lg:items-start">
                     {/* Services */}
                     <div className="flex flex-col gap-6">
                         <motion.h4 variants={itemVariants} className="font-inter-tight font-semibold text-[#71717A] text-xs lg:text-sm tracking-[0.14em] uppercase">
@@ -66,9 +66,9 @@ export const FooterSection = (): JSX.Element => {
                     </div>
 
                     {/* Contact & Socials */}
-                    <div className="flex flex-col w-full gap-8 lg:gap-10">
+                    <div className="flex flex-col w-full gap-6 lg:gap-8">
                         <motion.div variants={itemVariants} className="flex items-center">
-                            <p className="font-inter-tight font-medium text-[#71717A] text-xs sm:text-sm tracking-[0.12em] uppercase">
+                            <p className="font-inter-tight font-medium text-[#71717A] text-xs sm:text-sm tracking-[0.14em] uppercase">
                                 Let's get in touch
                             </p>
                         </motion.div>
@@ -81,12 +81,12 @@ export const FooterSection = (): JSX.Element => {
                                         variants={itemVariants}
                                         href={item.href}
                                         key={index}
-                                        className={`flex items-center gap-4 sm:gap-5 py-5 sm:py-6 w-full group ${index === 0 ? "border-b border-[#9d9d9e]/30" : ""}`}
+                                        className={`flex items-center gap-4 sm:gap-5 py-4 sm:py-5 w-full group ${index === 0 ? "border-b border-[#9d9d9e]/30" : ""}`}
                                     >
-                                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] transition-colors duration-300 group-hover:bg-white/[0.08]">
-                                            <IconComp className="w-5 h-5 text-[#A1A1AA] group-hover:text-[#F5F5F5] transition-all duration-300" />
+                                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] transition-colors duration-300 group-hover:bg-white/[0.08]">
+                                            <IconComp className="w-[18px] h-[18px] text-[#A1A1AA] group-hover:text-[#F5F5F5] transition-all duration-300" />
                                         </div>
-                                        <span className="font-inter-tight font-normal text-[#F5F5F5] text-[clamp(22px,3.2vw,38px)] leading-[1.06] tracking-tight truncate group-hover:text-white transition-colors">
+                                        <span className="font-inter-tight font-normal text-[#F5F5F5] text-[clamp(20px,2.8vw,34px)] leading-[1.1] tracking-tight truncate group-hover:text-white transition-colors">
                                             {item.text}
                                         </span>
                                     </motion.a>
@@ -97,32 +97,32 @@ export const FooterSection = (): JSX.Element => {
                         <motion.a 
                             href="#"
                             variants={itemVariants} 
-                            className="flex items-center justify-between w-full py-5 mt-2 border-t border-[#9d9d9e]/30 group cursor-pointer"
+                            className="flex items-center justify-between w-full py-4 border-t border-[#9d9d9e]/30 group cursor-pointer"
                         >
                             <span className="font-inter-tight font-normal text-[#F5F5F5] text-lg sm:text-xl group-hover:text-white transition-colors">
                                 Social media
                             </span>
-                            <div className="p-2.5 rounded-full border border-white/10 bg-white/[0.04] group-hover:bg-white/[0.08] transition-colors">
-                                <ArrowUpRight className="w-5 h-5 text-[#A1A1AA] group-hover:text-[#F5F5F5] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                            <div className="p-2 rounded-full border border-white/10 bg-white/[0.04] group-hover:bg-white/[0.08] transition-colors">
+                                <ArrowUpRight className="w-[18px] h-[18px] text-[#A1A1AA] group-hover:text-[#F5F5F5] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
                             </div>
                         </motion.a>
                     </div>
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-col items-center gap-12 lg:gap-16 pt-2">
+                <div className="flex flex-col items-center gap-10 lg:gap-12">
                     <motion.div variants={itemVariants} className="flex items-center justify-center w-full">
-                        <p className="font-['Inter_Tight-Medium',Helvetica] font-medium text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/40 text-[clamp(42px,8vw,96px)] leading-[0.92] tracking-tighter text-center drop-shadow-2xl">
+                        <p className="font-['Inter_Tight',Helvetica] font-medium text-transparent bg-clip-text bg-gradient-to-br from-white via-white/80 to-white/30 text-[clamp(38px,7vw,88px)] leading-[0.95] tracking-tighter text-center">
                             We solve it<br className="lg:hidden" /> for you
                         </p>
                     </motion.div>
 
-                    <motion.div variants={itemVariants} className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between w-full pt-8 border-t border-white/10">
+                    <motion.div variants={itemVariants} className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between w-full pt-6 border-t border-white/10">
                         <div className="flex items-center gap-2.5">
                              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                              <span className="text-[#A1A1AA] text-sm font-inter-tight">All systems operational</span>
                         </div>
-                        <div className="flex flex-wrap justify-start sm:justify-end gap-x-6 gap-y-3 sm:gap-x-8">
+                        <div className="flex flex-wrap justify-start sm:justify-end gap-x-5 gap-y-3 sm:gap-x-7">
                             {footerLinks.map((link, index) => (
                                 <a
                                     href="#"

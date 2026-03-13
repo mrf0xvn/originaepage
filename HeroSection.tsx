@@ -10,8 +10,38 @@ import vector7 from "./Vector-7.svg";
 import vector from "./Vector.svg";
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const navLinks = ["Service", "Model", "Team"];
+
+const HEADLINE = "Stop brainstorming.\nStart executing.";
+
+const SUBTEXT = `Great initiatives die from a lack of capacity. We bridge the gap between \u201cwe should do this\u201d and \u201cit\u2019s live.\u201d We assemble the specialized team, manage the workflows, and move your business forward. Immediately.`;
+
+const useTypewriter = (text: string, speed = 30, delay = 800) => {
+    const [displayedCount, setDisplayedCount] = useState(0);
+    const [isComplete, setIsComplete] = useState(false);
+    const [hasStarted, setHasStarted] = useState(false);
+
+    useEffect(() => {
+        const delayTimer = setTimeout(() => setHasStarted(true), delay);
+        return () => clearTimeout(delayTimer);
+    }, [delay]);
+
+    useEffect(() => {
+        if (!hasStarted) return;
+        if (displayedCount >= text.length) {
+            setIsComplete(true);
+            return;
+        }
+        const timer = setTimeout(() => {
+            setDisplayedCount((c) => c + 1);
+        }, speed);
+        return () => clearTimeout(timer);
+    }, [hasStarted, displayedCount, text.length, speed]);
+
+    return { displayedText: text.slice(0, displayedCount), isComplete, hasStarted };
+};
 
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -26,8 +56,8 @@ const containerVariants: Variants = {
 
 const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    show: { 
-        opacity: 1, 
+    show: {
+        opacity: 1,
         y: 0,
         transition: {
             type: "spring",
@@ -41,9 +71,10 @@ export const HeroSection = (): JSX.Element => {
     const { scrollY } = useScroll();
     const yBG = useTransform(scrollY, [0, 1000], [0, 200]);
     const scaleBG = useTransform(scrollY, [0, 1000], [1, 1.1]);
-    
+    const { displayedText, isComplete, hasStarted } = useTypewriter(HEADLINE, 55, 900);
+
     return (
-        <section className="relative w-full min-h-[100svh] bg-black flex flex-col overflow-hidden">
+        <section className="relative w-full h-[100svh] bg-black flex flex-col overflow-hidden">
             {/* Background Image with Parallax */}
             <motion.img
                 className="absolute inset-0 w-full h-full object-cover opacity-70"
@@ -55,26 +86,26 @@ export const HeroSection = (): JSX.Element => {
                 transition={{ duration: 1.5, ease: "easeOut" }}
             />
 
-            {/* Content Container */}
-            <div className="relative z-10 flex flex-col flex-1 w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-8 lg:py-10 justify-between">
-                
-                {/* Header */}
-                <motion.header 
-                    className="flex items-center justify-between w-full"
+            {/* Content Container — flex-col + justify-between ensures content fills & distributes evenly */}
+            <div className="relative z-10 flex flex-col w-full h-full max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-12 py-[2vh] sm:py-[2.5vh] lg:py-[3vh]">
+
+                {/* Header — fixed, compact */}
+                <motion.header
+                    className="flex items-center justify-between w-full shrink-0"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     {/* Logo Vectors */}
-                    <div className="flex items-center gap-[2px] h-[23px] shrink-0">
-                        <img className="w-[13px] h-[22px] object-contain" alt="O" src={vector7} />
-                        <img className="w-[13px] h-[22px] object-contain" alt="R" src={vector6} />
-                        <img className="w-[4px] h-[22px] object-contain" alt="I" src={vector5} />
-                        <img className="w-[13px] h-[22px] object-contain ml-[1px]" alt="G" src={vector4} />
-                        <img className="w-[4px] h-[22px] object-contain" alt="I" src={vector3} />
-                        <img className="w-[12px] h-[22px] object-contain" alt="N" src={vector2} />
-                        <img className="w-[13px] h-[22px] object-contain" alt="A" src={vector1} />
-                        <img className="w-[11px] h-[22px] object-contain" alt="E" src={vector} />
+                    <div className="flex items-center gap-[3px] h-[27px] shrink-0">
+                        <img className="h-[26px] w-auto" alt="O" src={vector7} />
+                        <img className="h-[26px] w-auto" alt="R" src={vector6} />
+                        <img className="h-[26px] w-auto" alt="I" src={vector5} />
+                        <img className="h-[26px] w-auto" alt="G" src={vector4} />
+                        <img className="h-[26px] w-auto" alt="I" src={vector3} />
+                        <img className="h-[26px] w-auto" alt="N" src={vector2} />
+                        <img className="h-[26px] w-auto" alt="A" src={vector1} />
+                        <img className="h-[26px] w-auto" alt="E" src={vector} />
                     </div>
 
                     <nav className="hidden md:flex items-center gap-12 lg:gap-24">
@@ -97,22 +128,67 @@ export const HeroSection = (): JSX.Element => {
                     </a>
                 </motion.header>
 
-                <motion.div 
-                    className="flex flex-col flex-1 w-full mt-10 md:mt-16 lg:mt-20 xl:mt-24"
+                {/* Main body — flex-1 distributes remaining space */}
+                <motion.div
+                    className="flex flex-col flex-1 min-h-0 w-full mt-[3vh] sm:mt-[4vh] md:mt-[5vh] justify-between"
                     variants={containerVariants}
                     initial="hidden"
                     animate="show"
                 >
-                    {/* Middle Content */}
-                    <motion.div className="flex flex-col w-full xl:max-w-[1200px]" variants={itemVariants}>
-                        <p className="font-inter-tight text-white/90 text-[clamp(36px,6.5vw,54px)] leading-[1.15] tracking-tight max-w-[820px]">
-                            Important initiatives get stuck due to a lack of capacity.<br className="hidden xl:block"/>
-                            From "we should do this" to "it's live". We assemble the<br className="hidden xl:block"/>
-                            team, manage the work, and move your business<br className="hidden xl:block"/>
-                            forward immediately.
-                        </p>
-                        
-                        <div className="mt-8 md:mt-12">
+                    {/* Middle Content — headline + subtext + button */}
+                    <motion.div className="flex flex-col w-full xl:max-w-[1200px] gap-[2vh] sm:gap-[2.5vh] md:gap-[3vh]" variants={itemVariants}>
+
+                        {/* Headline with typewriter */}
+                        <div className="relative max-w-[900px]">
+                            {/* Ghost headline */}
+                            <h2
+                                className="font-inter-tight font-semibold text-white leading-[1.05] tracking-tight invisible whitespace-pre-line"
+                                style={{ fontSize: 'clamp(28px, min(6vw, 8vh), 72px)' }}
+                                aria-hidden="true"
+                            >
+                                {HEADLINE}
+                            </h2>
+                            {/* Typing headline */}
+                            <h2
+                                className="font-inter-tight font-semibold text-white leading-[1.05] tracking-tight absolute inset-0 whitespace-pre-line"
+                                style={{ fontSize: 'clamp(28px, min(6vw, 8vh), 72px)' }}
+                            >
+                                {hasStarted ? displayedText : ""}
+                                {hasStarted && !isComplete && (
+                                    <span className="inline-block w-[3px] h-[0.85em] bg-white/90 ml-[3px] align-baseline animate-pulse" />
+                                )}
+                                {isComplete && (
+                                    <motion.span
+                                        className="inline-block w-[3px] h-[0.85em] bg-white/90 ml-[3px] align-baseline"
+                                        initial={{ opacity: 1 }}
+                                        animate={{ opacity: 0 }}
+                                        transition={{ duration: 0.6, delay: 0.5 }}
+                                    />
+                                )}
+                            </h2>
+                        </div>
+
+                        {/* Subtext — fades in after headline */}
+                        <motion.div
+                            className="max-w-[680px] bg-black/15 backdrop-blur-[2px] rounded-xl px-4 py-3 sm:px-6 sm:py-4"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={isComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+                        >
+                            <p
+                                className="font-inter-tight font-normal text-white/85 leading-[1.5] sm:leading-[1.45] tracking-normal"
+                                style={{ fontSize: 'clamp(13px, min(1.8vw, 2.8vh), 20px)' }}
+                            >
+                                {SUBTEXT}
+                            </p>
+                        </motion.div>
+
+                        {/* CTA Button — fades in after subtext */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 15 }}
+                            animate={isComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+                            transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
+                        >
                             <button className="btn-primary btn-hero group">
                                 <span className="font-inter-tight font-semibold text-black text-sm md:text-base">
                                     Book a meeting
@@ -121,16 +197,20 @@ export const HeroSection = (): JSX.Element => {
                                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5 arrow-pulse-strong" color="currentColor" />
                                 </div>
                             </button>
-                        </div>
+                        </motion.div>
+
                     </motion.div>
 
-                    {/* Bottom Content */}
-                    <motion.div className="flex flex-col w-full mt-auto pt-8 md:pt-12" variants={itemVariants}>
-                        <h1 className="whitespace-nowrap font-['Inter_Tight-Medium',Helvetica] font-medium text-white text-[13vw] sm:text-[11vw] md:text-[10vw] lg:text-[9.5vw] xl:text-[125px] 2xl:text-[135px] leading-[0.8] tracking-[-0.04em] w-full text-left drop-shadow-2xl">
+                    {/* Bottom Content — anchored to bottom */}
+                    <motion.div className="flex flex-col w-full shrink-0 mt-auto pt-[1.5vh]" variants={itemVariants}>
+                        <h1
+                            className="font-['Inter_Tight-Medium',Helvetica] font-medium text-white leading-[0.85] tracking-[-0.04em] w-full text-left drop-shadow-2xl"
+                            style={{ fontSize: 'clamp(28px, min(9vw, 8vh), 135px)' }}
+                        >
                             We solve it for you
                         </h1>
-                        
-                        <div className="flex items-center justify-between w-full mt-6 md:mt-8 pb-4 md:pb-6">
+
+                        <div className="flex items-center justify-between w-full mt-[1.5vh] sm:mt-[2vh] pb-[1vh] sm:pb-[1.5vh]">
                             <span className="font-['Inter_Tight-Regular',Helvetica] text-white/70 text-xs sm:text-sm">
                                 2026 All Rights Reserved
                             </span>
