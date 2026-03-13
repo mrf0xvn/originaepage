@@ -41,7 +41,10 @@ export const CallToActionSection = (): JSX.Element => {
                     and speak to a member of our team:
                 </motion.h2>
 
-                <motion.button 
+                <motion.a 
+                    href="https://calendly.com/originae"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "0px 0px -50px 0px" }}
@@ -54,7 +57,7 @@ export const CallToActionSection = (): JSX.Element => {
                     <div className="btn-arrow-circle">
                         <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse" color="currentColor" />
                     </div>
-                </motion.button>
+                </motion.a>
             </div>
 
             {/* Huge ORIGINAE Background Logo */}

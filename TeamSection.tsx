@@ -8,7 +8,7 @@ const teamMembers = [
     {
         name: "Theo Rame",
         gradient: "from-transparent to-[#F2F2F2]",
-        linkedinUrl: "#",
+        linkedinUrl: "https://www.linkedin.com/in/theo-rame/",
         image: theoRameImg,
     },
     {
@@ -61,14 +61,14 @@ export const TeamSection = (): JSX.Element => {
                         </h2>
                     </div>
 
-                    <button className="btn-primary btn-dark group w-fit shrink-0 border-none">
+                    <a href="https://calendly.com/originae" target="_blank" rel="noopener noreferrer" className="btn-primary btn-dark group w-fit shrink-0 border-none">
                         <span className="btn-text font-['Inter_Tight-Medium',Helvetica] font-medium text-base md:text-lg whitespace-nowrap">
                             Book a meeting
                         </span>
                         <div className="btn-arrow-circle">
                             <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse" color="currentColor" />
                         </div>
-                    </button>
+                    </a>
                 </motion.div>
 
                 {/* Team Grid */}

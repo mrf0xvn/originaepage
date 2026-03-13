@@ -124,7 +124,9 @@ export const HeroSection = (): JSX.Element => {
                     </nav>
 
                     <a
-                        href="#"
+                        href="https://calendly.com/originae"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hidden sm:flex font-['Inter_Tight-Regular',Helvetica] font-normal text-white/80 text-sm lg:text-base underline underline-offset-4 decoration-white/30 hover:text-white hover:decoration-white transition-all"
                     >
                         Book a meeting &rarr;
@@ -192,14 +194,14 @@ export const HeroSection = (): JSX.Element => {
                             animate={isComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
                             transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
                         >
-                            <button className="btn-primary btn-hero group">
+                            <a href="https://calendly.com/originae" target="_blank" rel="noopener noreferrer" className="btn-primary btn-hero group">
                                 <span className="btn-text font-inter-tight font-semibold text-sm md:text-base">
                                     Book a meeting
                                 </span>
                                 <div className="btn-arrow-circle">
                                     <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse-strong" color="currentColor" />
                                 </div>
-                            </button>
+                            </a>
                         </motion.div>
 
                     </motion.div>

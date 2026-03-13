@@ -59,14 +59,14 @@ export const GetStartedSection = (): JSX.Element => {
                             Let's get started
                         </h2>
 
-                        <button className="btn-primary group">
+                        <a href="https://calendly.com/originae" target="_blank" rel="noopener noreferrer" className="btn-primary group">
                             <span className="btn-text font-inter-tight font-semibold text-base md:text-lg whitespace-nowrap">
                                 Book a call now
                             </span>
                             <div className="btn-arrow-circle">
                                 <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse" color="currentColor" />
                             </div>
-                        </button>
+                        </a>
                     </div>
 
                     {/* Steps */}
