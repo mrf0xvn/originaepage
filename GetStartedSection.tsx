@@ -60,11 +60,11 @@ export const GetStartedSection = (): JSX.Element => {
                         </h2>
 
                         <button className="btn-primary group">
-                            <span className="font-inter-tight font-semibold text-black text-base md:text-lg whitespace-nowrap">
+                            <span className="btn-text font-inter-tight font-semibold text-base md:text-lg whitespace-nowrap">
                                 Book a call now
                             </span>
-                            <div className="flex items-center justify-center w-[38px] h-[38px] bg-black rounded-full shrink-0">
-                                <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1 arrow-pulse" color="white" />
+                            <div className="btn-arrow-circle">
+                                <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse" color="currentColor" />
                             </div>
                         </button>
                     </div>

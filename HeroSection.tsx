@@ -1,5 +1,5 @@
 import { ArrowRight } from "./ArrowRight";
-import image21 from "./image-21.png";
+import heroVideo from "./image-21.mp4";
 import vector1 from "./Vector-1.svg";
 import vector2 from "./Vector-2.svg";
 import vector3 from "./Vector-3.svg";
@@ -75,11 +75,14 @@ export const HeroSection = (): JSX.Element => {
 
     return (
         <section className="relative w-full h-[100svh] bg-black flex flex-col overflow-hidden">
-            {/* Background Image with Parallax */}
-            <motion.img
+            {/* Background Video with Parallax */}
+            <motion.video
                 className="absolute inset-0 w-full h-full object-cover opacity-70"
-                alt="Background"
-                src={image21}
+                src={heroVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
                 style={{ y: yBG, scale: scaleBG }}
                 initial={{ scale: 1.1, opacity: 0 }}
                 animate={{ scale: 1, opacity: 0.8 }}
@@ -190,11 +193,11 @@ export const HeroSection = (): JSX.Element => {
                             transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
                         >
                             <button className="btn-primary btn-hero group">
-                                <span className="font-inter-tight font-semibold text-black text-sm md:text-base">
+                                <span className="btn-text font-inter-tight font-semibold text-sm md:text-base">
                                     Book a meeting
                                 </span>
-                                <div className="bg-black text-white rounded-full p-2.5 flex items-center justify-center">
-                                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5 arrow-pulse-strong" color="currentColor" />
+                                <div className="btn-arrow-circle">
+                                    <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse-strong" color="currentColor" />
                                 </div>
                             </button>
                         </motion.div>

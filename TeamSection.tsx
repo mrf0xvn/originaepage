@@ -61,12 +61,12 @@ export const TeamSection = (): JSX.Element => {
                         </h2>
                     </div>
 
-                    <button className="inline-flex items-center justify-between w-fit gap-4 pl-5 pr-1 py-1 bg-black rounded-full hover:bg-gray-800 transition-colors cursor-pointer border-none shrink-0 group">
-                        <span className="font-['Inter_Tight-Medium',Helvetica] font-medium text-white text-base md:text-lg whitespace-nowrap">
+                    <button className="btn-primary btn-dark group w-fit shrink-0 border-none">
+                        <span className="btn-text font-['Inter_Tight-Medium',Helvetica] font-medium text-base md:text-lg whitespace-nowrap">
                             Book a meeting
                         </span>
-                        <div className="flex items-center justify-center w-[38px] h-[38px] bg-white rounded-full shrink-0">
-                            <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" color="black" />
+                        <div className="btn-arrow-circle">
+                            <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse" color="currentColor" />
                         </div>
                     </button>
                 </motion.div>

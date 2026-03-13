@@ -46,13 +46,13 @@ export const CallToActionSection = (): JSX.Element => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "0px 0px -50px 0px" }}
                     transition={{ duration: 0.5, delay: 0.2, type: "spring", stiffness: 100 }}
-                    className="btn-primary cursor-pointer group"
+                    className="btn-primary group"
                 >
-                    <span className="font-inter-tight font-semibold text-black text-sm md:text-base whitespace-nowrap">
+                    <span className="btn-text font-inter-tight font-semibold text-sm md:text-base whitespace-nowrap">
                         Book a meeting
                     </span>
-                    <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-black rounded-full shrink-0">
-                        <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 arrow-pulse" color="white" />
+                    <div className="btn-arrow-circle">
+                        <ArrowRight className="btn-arrow-icon w-5 h-5 arrow-pulse" color="currentColor" />
                     </div>
                 </motion.button>
             </div>
