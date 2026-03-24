@@ -41,7 +41,7 @@ const cardVariants: Variants = {
 
 export const ServicesOverviewSection = (): JSX.Element => {
     return (
-        <section className="w-full bg-white flex flex-col items-center">
+        <section id="services" className="w-full bg-white flex flex-col items-center">
             <div className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-16 lg:py-20 flex flex-col gap-16">
                 
                 {/* Header */}

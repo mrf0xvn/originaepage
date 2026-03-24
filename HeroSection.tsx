@@ -12,7 +12,11 @@ import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const navLinks = ["Service", "Model", "Team"];
+const navLinks = [
+    { label: "Service", href: "#services" },
+    { label: "Model", href: "#model" },
+    { label: "Team", href: "#team" },
+];
 
 const HEADLINE = "Stop brainstorming.\nStart executing.";
 
@@ -114,11 +118,15 @@ export const HeroSection = (): JSX.Element => {
                     <nav className="hidden md:flex items-center gap-12 lg:gap-24">
                         {navLinks.map((link) => (
                             <a
-                                key={link}
-                                href="#"
+                                key={link.label}
+                                href={link.href}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                                }}
                                 className="font-['Inter_Tight-Regular',Helvetica] font-normal text-white/80 text-sm lg:text-base hover:text-white transition-colors"
                             >
-                                {link}
+                                {link.label}
                             </a>
                         ))}
                     </nav>

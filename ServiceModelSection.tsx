@@ -8,14 +8,26 @@ const CaretDown = ({ className }: { className?: string }) => (
 );
 
 const serviceSteps = [
-    { number: "(01)", title: "Kick off", description: null },
+    {
+        number: "(01)",
+        title: "Kick off",
+        description: "We begin by aligning on the mandate, business priorities, and success metrics.\n\nEach engagement starts with a structured kickoff to clarify scope, goals, timelines, and key stakeholders — so the team can move with focus from day one.",
+    },
     {
         number: "(02)",
         title: "Engage",
         description: "Each project is led by a Swiss-based mandate lead and supported by a dedicated team, following a clear execution plan with defined milestones to ensure structured and reliable delivery.",
     },
-    { number: "(03)", title: "Deliver", description: null },
-    { number: "(04)", title: "Review & Extend", description: null },
+    {
+        number: "(03)",
+        title: "Deliver",
+        description: "We execute against clear priorities and deliver measurable progress across every workstream.\n\nFrom implementation to iteration, each milestone is managed with accountability, visibility, and a strong focus on outcomes that move the business forward.",
+    },
+    {
+        number: "(04)",
+        title: "Review & Extend",
+        description: "We review performance, identify what\u2019s working, and define the next stage of execution.\n\nThis ensures every engagement remains aligned with business goals — whether that means refining the current scope, expanding the mandate, or building the next phase with confidence.",
+    },
 ];
 
 const mandateCards = [
@@ -69,7 +81,7 @@ export const ServiceModelSection = (): JSX.Element => {
     };
 
     return (
-        <section className="w-full bg-white flex flex-col items-center overflow-hidden">
+        <section id="model" className="w-full bg-white flex flex-col items-center overflow-hidden">
             <div className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-16 lg:py-20 flex flex-col gap-16">
                 
                 {/* Header */}
@@ -146,10 +158,12 @@ export const ServiceModelSection = (): JSX.Element => {
                                                 }}
                                                 transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
                                             >
-                                                <div className="pl-0 sm:pl-[104px]">
-                                                    <p className="font-['Inter_Tight-Regular',Helvetica] text-black text-lg lg:text-xl leading-relaxed max-w-md text-left">
-                                                        {step.description}
-                                                    </p>
+                                                <div className="pl-0 sm:pl-[104px] flex flex-col gap-4">
+                                                    {step.description!.split("\n\n").map((para, i) => (
+                                                        <p key={i} className="font-['Inter_Tight-Regular',Helvetica] text-black text-lg lg:text-xl leading-relaxed max-w-md text-left">
+                                                            {para}
+                                                        </p>
+                                                    ))}
                                                 </div>
                                             </motion.div>
                                         )}

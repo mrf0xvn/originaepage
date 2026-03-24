@@ -41,7 +41,7 @@ const itemVariants: Variants = {
 
 export const TeamSection = (): JSX.Element => {
     return (
-        <section className="w-full bg-white flex flex-col items-center overflow-hidden">
+        <section id="team" className="w-full bg-white flex flex-col items-center overflow-hidden">
             <div className="w-full max-w-7xl mx-auto px-6 lg:px-20 py-16 lg:py-20 flex flex-col gap-10 lg:gap-16">
                 
                 {/* Header */}
