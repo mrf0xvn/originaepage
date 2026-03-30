@@ -80,6 +80,7 @@ export const ServiceDetailsSection = (): JSX.Element => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                    id="marketing"
                     className="relative z-10 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-[#F2F2F2] rounded-t-3xl sm:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/5">
@@ -100,6 +101,7 @@ export const ServiceDetailsSection = (): JSX.Element => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                    id="operations"
                     className="relative z-20 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-black sm:rounded-3xl rounded-t-3xl shadow-lg -mt-6 hover:shadow-xl transition-shadow duration-300"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/5">
@@ -120,6 +122,7 @@ export const ServiceDetailsSection = (): JSX.Element => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                    id="business-development"
                     className="relative z-30 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-[#F2F2F2] sm:rounded-3xl rounded-t-3xl shadow-lg -mt-6 hover:shadow-xl transition-shadow duration-300"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/5">
@@ -140,6 +143,7 @@ export const ServiceDetailsSection = (): JSX.Element => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                    id="product-technology"
                     className="relative z-40 flex flex-col lg:flex-row items-start justify-between p-8 lg:p-12 gap-8 lg:gap-16 bg-black sm:rounded-3xl rounded-t-3xl shadow-lg -mt-6 mb-10 hover:shadow-xl transition-shadow duration-300"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8 w-full lg:w-2/5">

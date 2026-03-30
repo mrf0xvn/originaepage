@@ -1,3 +1,4 @@
+import React from "react";
 import { motion, Variants } from "framer-motion";
 import { AtSign, Mail, ArrowUpRight } from "lucide-react";
 
@@ -16,12 +17,21 @@ const itemVariants: Variants = {
 
 export const FooterSection = (): JSX.Element => {
     const services = [
-        "Marketing",
-        "Operations",
-        "Business Development",
-        "Product & Technology",
-        "Team",
+        { label: "Marketing", href: "#marketing" },
+        { label: "Operations", href: "#operations" },
+        { label: "Business Development", href: "#business-development" },
+        { label: "Product & Technology", href: "#product-technology" },
+        { label: "Team", href: "#team" },
     ];
+
+    const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const targetId = href.replace("#", "");
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
 
     const contactItems = [
         { icon: AtSign, text: "@originaeadmin", href: "#" },
@@ -56,10 +66,11 @@ export const FooterSection = (): JSX.Element => {
                                 <motion.a
                                     variants={itemVariants}
                                     key={index}
-                                    href="#"
-                                    className="font-inter-tight font-normal text-[#F5F5F5] text-base lg:text-[18px] hover:text-white hover:translate-x-1.5 transition-all duration-300 whitespace-nowrap w-fit"
+                                    href={service.href}
+                                    onClick={(e) => handleScrollTo(e, service.href)}
+                                    className="font-inter-tight font-normal text-[#F5F5F5] text-base lg:text-[18px] hover:text-white hover:translate-x-1.5 transition-all duration-300 whitespace-nowrap w-fit cursor-pointer"
                                 >
-                                    {service}
+                                    {service.label}
                                 </motion.a>
                             ))}
                         </div>
