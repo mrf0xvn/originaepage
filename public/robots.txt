@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://originae.org/sitemap.xml

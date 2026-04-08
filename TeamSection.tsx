@@ -89,6 +89,8 @@ export const TeamSection = (): JSX.Element => {
                                 <img 
                                     src={member.image} 
                                     alt={member.name} 
+                                    loading="lazy"
+                                    decoding="async"
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                 />
                             )}

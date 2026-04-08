@@ -14,9 +14,12 @@ export const CallToActionSection = (): JSX.Element => {
     return (
         <section className="relative w-full min-h-[420px] sm:min-h-[500px] flex flex-col items-center justify-center pt-20 sm:pt-24 md:pt-32 pb-0 px-5 sm:px-6 overflow-hidden">
             {/* Background Image */}
-            <div 
-                className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
-                style={{ backgroundImage: `url(${CTA_background})` }}
+            <img
+                className="absolute inset-0 w-full h-full object-cover z-0"
+                src={CTA_background}
+                alt=""
+                loading="lazy"
+                decoding="async"
             />
             
             {/* Gradient Overlay */}

@@ -1,5 +1,6 @@
 import { CallToActionSection } from "./CallToActionSection";
 import { FooterSection } from "./FooterSection";
+import { FeaturedProjectsSection } from "./FeaturedProjectsSection";
 import { GetStartedSection } from "./GetStartedSection";
 import { HeroSection } from "./HeroSection";
 import { ServiceDetailsSection } from "./ServiceDetailsSection";
@@ -15,6 +16,7 @@ export const LandingPage = (): JSX.Element => {
             <ServiceDetailsSection />
             <CallToActionSection />
             <ServiceModelSection />
+            <FeaturedProjectsSection />
             <TeamSection />
             <GetStartedSection />
             <FooterSection />
