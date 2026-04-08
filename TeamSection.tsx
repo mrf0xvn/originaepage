@@ -1,8 +1,8 @@
 import { motion, Variants } from "framer-motion";
 import { ArrowRight } from "./ArrowRight";
-import theoRameImg from "./Theo Rame.png";
-import tracyImg from "./Tracy.png";
-import teamMemberImg from "./Team member.png";
+import theoRameImg from "./Theo Rame.webp";
+import tracyImg from "./Tracy.webp";
+import teamMemberImg from "./Team member.webp";
 
 const teamMembers = [
     {
