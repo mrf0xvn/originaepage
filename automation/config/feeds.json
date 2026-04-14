@@ -1,0 +1,60 @@
+{
+  "feeds": [
+    {
+      "url": "https://martech.org/feed/",
+      "name": "MarTech",
+      "category": "growth-systems",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://blog.hubspot.com/marketing/rss.xml",
+      "name": "HubSpot Marketing",
+      "category": "growth-systems",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://businessdevelopmentuniversity.com/feed/",
+      "name": "BD University",
+      "category": "gtm-execution",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://blog.hubspot.com/sales/rss.xml",
+      "name": "HubSpot Sales",
+      "category": "gtm-execution",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://zapier.com/blog/feeds/latest/",
+      "name": "Zapier Blog",
+      "category": "operations-automation",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://www.workfusion.com/feed/",
+      "name": "WorkFusion",
+      "category": "operations-automation",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://techcrunch.com/feed/",
+      "name": "TechCrunch",
+      "category": "product-delivery",
+      "language": "en",
+      "active": true
+    },
+    {
+      "url": "https://www.theverge.com/rss/index.xml",
+      "name": "The Verge",
+      "category": "product-delivery",
+      "language": "en",
+      "active": true
+    }
+  ]
+}

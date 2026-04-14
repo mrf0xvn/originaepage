@@ -1,14 +1,6 @@
 import { ArrowRight } from "./ArrowRight";
 import heroVideo from "./image-21.mp4";
 import heroPoster from "./image-21-poster.webp";
-import vector1 from "./Vector-1.svg";
-import vector2 from "./Vector-2.svg";
-import vector3 from "./Vector-3.svg";
-import vector4 from "./Vector-4.svg";
-import vector5 from "./Vector-5.svg";
-import vector6 from "./Vector-6.svg";
-import vector7 from "./Vector-7.svg";
-import vector from "./Vector.svg";
 import {
     motion,
     useReducedMotion,
@@ -17,13 +9,7 @@ import {
     Variants,
 } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useEffect, useState } from "react";
-
-const navLinks = [
-    { label: "Service", href: "#services" },
-    { label: "Model", href: "#model" },
-    { label: "Team", href: "#team" },
-];
+import { ReactNode, useEffect, useState } from "react";
 
 const HEADLINE = "Stop brainstorming.\nStart executing.";
 
@@ -102,7 +88,11 @@ const itemVariants: Variants = {
     },
 };
 
-export const HeroSection = (): JSX.Element => {
+interface HeroSectionProps {
+    headerSlot?: ReactNode;
+}
+
+export const HeroSection = ({ headerSlot }: HeroSectionProps): JSX.Element => {
     const { scrollY } = useScroll();
     const prefersReducedMotion = useReducedMotion();
     const [showHeroVideo, setShowHeroVideo] = useState(false);
@@ -171,50 +161,16 @@ export const HeroSection = (): JSX.Element => {
             )}
 
             <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 py-[2vh] sm:px-6 sm:py-[2.5vh] lg:px-12 lg:py-[3vh]">
-                <motion.header
-                    className="flex w-full shrink-0 items-center justify-between"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                >
-                    <div className="flex h-[27px] shrink-0 items-center gap-[3px]">
-                        <img className="h-[26px] w-auto" alt="O" src={vector7} />
-                        <img className="h-[26px] w-auto" alt="R" src={vector6} />
-                        <img className="h-[26px] w-auto" alt="I" src={vector5} />
-                        <img className="h-[26px] w-auto" alt="G" src={vector4} />
-                        <img className="h-[26px] w-auto" alt="I" src={vector3} />
-                        <img className="h-[26px] w-auto" alt="N" src={vector2} />
-                        <img className="h-[26px] w-auto" alt="A" src={vector1} />
-                        <img className="h-[26px] w-auto" alt="E" src={vector} />
-                    </div>
-
-                    <nav className="hidden items-center gap-12 md:flex lg:gap-24">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.label}
-                                href={link.href}
-                                onClick={(event) => {
-                                    event.preventDefault();
-                                    document
-                                        .querySelector(link.href)
-                                        ?.scrollIntoView({ behavior: "smooth" });
-                                }}
-                                className="font-['Inter_Tight-Regular',Helvetica] text-sm font-normal text-white/80 transition-colors hover:text-white lg:text-base"
-                            >
-                                {link.label}
-                            </a>
-                        ))}
-                    </nav>
-
-                    <a
-                        href="https://calendly.com/originae"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hidden font-['Inter_Tight-Regular',Helvetica] text-sm font-normal text-white/80 underline decoration-white/30 underline-offset-4 transition-all hover:text-white hover:decoration-white sm:flex lg:text-base"
+                {headerSlot ? (
+                    <motion.div
+                        className="flex w-full shrink-0 items-center justify-between"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        Book a meeting &rarr;
-                    </a>
-                </motion.header>
+                        {headerSlot}
+                    </motion.div>
+                ) : null}
 
                 <motion.div
                     className="mt-[3vh] flex min-h-0 flex-1 flex-col justify-between sm:mt-[4vh] md:mt-[5vh]"

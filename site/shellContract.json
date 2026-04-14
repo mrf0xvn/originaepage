@@ -1,0 +1,39 @@
+{
+  "primarySectionLinks": [
+    { "label": "Service", "sectionId": "services" },
+    { "label": "Model", "sectionId": "model" },
+    { "label": "Team", "sectionId": "team" }
+  ],
+  "serviceDetailLinks": [
+    { "label": "Marketing", "sectionId": "marketing" },
+    { "label": "Operations", "sectionId": "operations" },
+    { "label": "Business Development", "sectionId": "business-development" },
+    { "label": "Product & Technology", "sectionId": "product-technology" },
+    { "label": "Team", "sectionId": "team" }
+  ],
+  "insightsLink": { "label": "Insights", "href": "/insights" },
+  "meetingCta": { "label": "Book a meeting", "href": "https://calendly.com/originae" },
+  "editorial": {
+    "eyebrow": "Execution journal",
+    "readingEyebrow": "Reading mode",
+    "label": "Originae Insights",
+    "href": "/insights",
+    "description": "A curated editorial layer for execution notes, operator observations, and strategic context tied back to the Originae service model.",
+    "footerPitch": "Originae turns insight into execution with curated operator notes and structured delivery context.",
+    "articleFooterPitch": "Continue the operator thread without dropping out of reading mode."
+  },
+  "contactItems": [
+    { "kind": "handle", "label": "@originaeadmin", "href": "#" },
+    { "kind": "email", "label": "hello@originae.org", "href": "mailto:hello@originae.org" }
+  ],
+  "footerMeta": [
+    "Privacy Policy",
+    "Copyright Originae 2026",
+    "Terms and Conditions"
+  ],
+  "statusLabel": "All systems operational",
+  "heroWordmarkLabel": "Originae",
+  "articleBackLabel": "Back to insights",
+  "browseInsightsLabel": "Browse insights",
+  "homeLinkLabel": "Back to home"
+}

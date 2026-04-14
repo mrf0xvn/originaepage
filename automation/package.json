@@ -1,0 +1,25 @@
+{
+  "name": "originae-automation",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "RSS → AI Rewrite → Originae Insights automation daemon",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node src/index.mjs --dry-run",
+    "watch": "node src/watcher.mjs --once",
+    "rewrite": "node src/rewriter.mjs --once",
+    "publish": "node src/publisher.mjs --once",
+    "db:reset": "node src/db.mjs --reset"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "rss-parser": "^3.13.0",
+    "simple-git": "^3.27.0",
+    "sql.js": "^1.14.1"
+  },
+  "optionalDependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "openai": "^4.70.0"
+  }
+}

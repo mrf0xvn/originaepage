@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Automation daemon runtime files
+automation/data/
+automation/logs/
+automation/node_modules/
+automation/config/settings.json

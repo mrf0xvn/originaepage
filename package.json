@@ -5,8 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
+    "sync:insights": "node ./scripts/sync-originae-insights.mjs",
+    "prebuild": "npm run sync:insights",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "postbuild": "node ./scripts/prerender-routes.mjs && node ./scripts/generate-seo-assets.mjs",
+    "preview": "vite preview",
+    "verify:insights": "node ./scripts/verify-insights-build.mjs",
+    "generate:seo": "node ./scripts/generate-seo-assets.mjs",
+    "indexnow:notify": "node ./scripts/indexnow-notify.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

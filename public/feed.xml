@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Originae Insights</title>
+  <subtitle>Execution notes &amp; working signal for founders and operators.</subtitle>
+  <link href="https://originae.org/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://originae.org/insights" rel="alternate" type="text/html" />
+  <id>https://originae.org/insights</id>
+  <updated>2026-04-14T17:40:08.819Z</updated>
+  <author><name>Originae Editorial</name></author>
+  <icon>https://originae.org/favicon.svg</icon>
+  <logo>https://originae.org/og-cover.jpg</logo>
+  <rights>© 2026 Originae. All rights reserved.</rights>
+  <entry>
+    <title>SusHi Tech 2026: Four domains reshaping hardware and AI</title>
+    <link href="https://originae.org/insights/sushi-tech-2026-four-domains-to-watch" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/sushi-tech-2026-four-domains-to-watch</id>
+    <published>2026-04-10T16:38:43.000Z</published>
+    <updated>2026-04-14T08:12:34.743Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">SusHi Tech 2026 focuses on AI, Robotics, Resilience and Entertainment — expect humanoid demos, autonomous-driving software sessions, cyber and climate deep dives, and creative AI debates.</summary>
+    <content type="html">&lt;img src="https://techcrunch.com/wp-content/uploads/2026/04/STTchallenge.jpeg?w=800" alt="" /&gt;&lt;p&gt;SusHi Tech 2026 focuses on AI, Robotics, Resilience and Entertainment — expect humanoid demos, autonomous-driving software sessions, cyber and climate deep dives, and creative AI debates.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Florida AG Opens Probe After Report ChatGPT Was Used in Campus Shooting</title>
+    <link href="https://originae.org/insights/florida-ag-probe-chatgpt-campus-shooting" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/florida-ag-probe-chatgpt-campus-shooting</id>
+    <published>2026-04-09T20:11:55.000Z</published>
+    <updated>2026-04-14T08:12:34.744Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Florida&#39;s attorney general has opened an investigation after reports that ChatGPT was used to plan an attack that killed two and injured five at Florida State University; a victim&#39;s family plans to sue OpenAI.</summary>
+    <content type="html">&lt;img src="https://techcrunch.com/wp-content/uploads/2026/02/EU-ai-1258475609.jpg?w=1024" alt="" /&gt;&lt;p&gt;Florida&#39;s attorney general has opened an investigation after reports that ChatGPT was used to plan an attack that killed two and injured five at Florida State University; a victim&#39;s family plans to sue OpenAI.&lt;/p&gt;</content>
+    <category term="case-notes" />
+  </entry>
+  <entry>
+    <title>When a model release is paused: reading Anthropic’s Mythos move</title>
+    <link href="https://originae.org/insights/when-a-model-release-is-paused-reading-anthropics-mythos-move" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/when-a-model-release-is-paused-reading-anthropics-mythos-move</id>
+    <published>2026-04-09T18:50:05.000Z</published>
+    <updated>2026-04-14T08:12:34.744Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Anthropic limited the rollout of its new model, Mythos, citing that it was “too capable of finding security exploits.” Here’s a clear operational read on what that claim does — and doesn’t — tell you.</summary>
+    <content type="html">&lt;img src="https://techcrunch.com/wp-content/uploads/2025/02/Anthropic-Dario-Amodei.jpeg?w=1182" alt="" /&gt;&lt;p&gt;Anthropic limited the rollout of its new model, Mythos, citing that it was “too capable of finding security exploits.” Here’s a clear operational read on what that claim does — and doesn’t — tell you.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Railway’s $100M bet: AI-native cloud for instant deploys and cheaper infra</title>
+    <link href="https://originae.org/insights/railway-100m-ai-native-cloud" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/railway-100m-ai-native-cloud</id>
+    <published>2026-01-22T14:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.406Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Railway raised $100M to commercialize an AI-native cloud: sub-second deploys, per-second billing and custom data centers. Founders and CTOs should map implications for build loops and costs.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/5RLyQIpBeVXxv0RpcXZxWQ/fd9680c6d82acd8208ac341fc575f5fb/nuneybits_Vector_art_of_a_sleek_bullet_train_bursting_from_a_cl_32a805aa-272c-4b34-ac16-cf20508b7ff4.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Railway raised $100M to commercialize an AI-native cloud: sub-second deploys, per-second billing and custom data centers. Founders and CTOs should map implications for build loops and costs.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Goose vs Claude Code: How local AI breaks the $200/month era</title>
+    <link href="https://originae.org/insights/goose-vs-claude-code-local-ai-breaks-200-month-era" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/goose-vs-claude-code-local-ai-breaks-200-month-era</id>
+    <published>2026-01-19T14:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.409Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Anthropic&#39;s Claude Code charges up to $200/month with opaque rate limits. Block&#39;s open-source Goose runs locally, free, model-agnostic, and preserves developer control.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/1U9H8GLIqoGqKpitVfgw3T/ba56292f99409eca709dac0b176ec245/nuneybits_Vector_art_of_white_goose_silhouette_flying_through_c_8100d5a7-9e36-4ed6-a188-016470e1d0e1.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Anthropic&#39;s Claude Code charges up to $200/month with opaque rate limits. Block&#39;s open-source Goose runs locally, free, model-agnostic, and preserves developer control.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>How Listen Labs scaled AI customer interviews to win $69M</title>
+    <link href="https://originae.org/insights/listen-labs-ai-interviews-69m-funding" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/listen-labs-ai-interviews-69m-funding</id>
+    <published>2026-01-16T14:01:00.000Z</published>
+    <updated>2026-04-14T15:36:16.409Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Listen Labs raised $69M after a viral hiring stunt and built an AI-first platform that runs open-ended video interviews at scale, delivering rapid, high-quality customer insights.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/4gD12ThOmNHZuosqC4xCTz/277b1e8968da602108a29fae2eaca440/nuneybits_Vector_art_of_billboard_with_cryptic_code_dbe5b0ff-7644-45e6-a1ca-4a5dceeff986.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Listen Labs raised $69M after a viral hiring stunt and built an AI-first platform that runs open-ended video interviews at scale, delivering rapid, high-quality customer insights.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Salesforce’s Slackbot Rebuild: An Operator’s Guide to the New Agentic Interface</title>
+    <link href="https://originae.org/insights/salesforce-slackbot-rebuild-agentic-interface" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/salesforce-slackbot-rebuild-agentic-interface</id>
+    <published>2026-01-13T13:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.410Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Salesforce rebuilt Slackbot into an LLM-backed workplace agent that searches enterprise sources, drafts Canvas documents, and coordinates actions — initially powered by Anthropic Claude.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/4Xrcg14GLKFlwSEnuEzxyS/21c85d29d03c4c974076475c009e3b38/nuneybits_Vector_art_of_chat_bubbles_on_a_computer_screen_in_th_5018a7ea-3496-4103-8453-7ba1b129189a.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Salesforce rebuilt Slackbot into an LLM-backed workplace agent that searches enterprise sources, drafts Canvas documents, and coordinates actions — initially powered by Anthropic Claude.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Anthropic Cowork: a desktop agent that works directly in your files</title>
+    <link href="https://originae.org/insights/anthropic-cowork-desktop-agent" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/anthropic-cowork-desktop-agent</id>
+    <published>2026-01-12T11:30:00.000Z</published>
+    <updated>2026-04-14T15:36:16.411Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Anthropic&#39;s Cowork brings Claude&#39;s agentic capabilities to a macOS desktop, letting the AI read, edit and create files in a user-designated folder. It&#39;s fast-built, powerful—and risky.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/wHv1Wez7Ps9wYVYAo9fwT/14b41f606dbf1f5b17994be510407449/nuneybits_Hyper-realistic_image_of_a_retro_computer_with_a_glos_61ffb6e2-7c33-4d45-85f7-69c28693b3ec.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Anthropic&#39;s Cowork brings Claude&#39;s agentic capabilities to a macOS desktop, letting the AI read, edit and create files in a user-designated folder. It&#39;s fast-built, powerful—and risky.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>NousCoder-14B: an open-source leap in verifiable coding models</title>
+    <link href="https://originae.org/insights/nouscoder-14b-open-source-coding-model" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/nouscoder-14b-open-source-coding-model</id>
+    <published>2026-01-07T20:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.412Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Nous Research released NousCoder-14B, a 14B open-source coding model scoring 67.87% on LiveCodeBench v6. Training details, dataset limits and the Atropos stack are public.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/66Tw6dMGGoSZZOK6XB6gm6/0fafc7520898e26c88edf1de9e74e863/nuneybits_Vector_art_of_radiant_skull_emitting_code_beams_deep__17d19acc-0af7-41ad-ac28-16f09ef5234b.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Nous Research released NousCoder-14B, a 14B open-source coding model scoring 67.87% on LiveCodeBench v6. Training details, dataset limits and the Atropos stack are public.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Running five AI agents: a practical workflow that multiplies developer output</title>
+    <link href="https://originae.org/insights/running-five-ai-agents-practical-workflow" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/running-five-ai-agents-practical-workflow</id>
+    <published>2026-01-05T07:45:00.000Z</published>
+    <updated>2026-04-14T15:36:16.412Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Anthropic engineer Boris Cherny revealed a simple, reproducible workflow: run multiple Claude agents in parallel, use a single-file memory, smart models, slash commands and verification loops.</summary>
+    <content type="html">&lt;img src="https://images.ctfassets.net/jdtwqhzvc2n1/6VsJWNsStTR57q9vFd5L08/a0d88b4dcbd1e9ba77fd72a9c55988d9/nuneybits_Vector_art_of_programmer_conducting_robot_orchestra_i_908157a9-d44f-4bce-b390-5913b88dad27.webp?w=300&amp;q=30" alt="" /&gt;&lt;p&gt;Anthropic engineer Boris Cherny revealed a simple, reproducible workflow: run multiple Claude agents in parallel, use a single-file memory, smart models, slash commands and verification loops.&lt;/p&gt;</content>
+    <category term="operations-automation" />
+  </entry>
+  <entry>
+    <title>Attack on OpenAI HQ and CEO’s Home: Operational Security Lessons</title>
+    <link href="https://originae.org/insights/attack-openai-hq-ceos-home-operational-security-lessons" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/attack-openai-hq-ceos-home-operational-security-lessons</id>
+    <published>2026-04-14T00:02:38.000Z</published>
+    <updated>2026-04-14T15:36:16.412Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">A suspect allegedly attacked OpenAI CEO Sam Altman&#39;s home and tried to breach the company&#39;s HQ; he now faces federal charges. Practical, operator-focused security steps for founders and CTOs.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/screenshot_2026-04-13_161515_0.jpg?quality=90&amp;strip=all&amp;crop=0.18825561312608,0,99.623488773748,100" alt="" /&gt;&lt;p&gt;A suspect allegedly attacked OpenAI CEO Sam Altman&#39;s home and tried to breach the company&#39;s HQ; he now faces federal charges. Practical, operator-focused security steps for founders and CTOs.&lt;/p&gt;</content>
+    <category term="operations-automation" />
+  </entry>
+  <entry>
+    <title>When AI ‘Attends’ Coachella: Practical notes for operators</title>
+    <link href="https://originae.org/insights/ai-attends-coachella-practical-notes" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/ai-attends-coachella-practical-notes</id>
+    <published>2026-04-13T19:53:46.000Z</published>
+    <updated>2026-04-14T15:36:16.412Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">At Coachella, social feeds are showing stylish festival scenes — some creators are entirely AI-generated. Practical steps for founders and operators to manage authenticity risk.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/ai-label-10.png?quality=90&amp;strip=all&amp;crop=0%2C0%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;At Coachella, social feeds are showing stylish festival scenes — some creators are entirely AI-generated. Practical steps for founders and operators to manage authenticity risk.&lt;/p&gt;</content>
+    <category term="growth-systems" />
+  </entry>
+  <entry>
+    <title>OpenAI’s playbook: moats, enterprise focus, and what founders should watch</title>
+    <link href="https://originae.org/insights/openai-moats-enterprise-focus" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/openai-moats-enterprise-focus</id>
+    <published>2026-04-13T16:21:08.000Z</published>
+    <updated>2026-04-14T15:36:16.413Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">An internal OpenAI memo stresses locking users and expanding enterprise accounts to blunt model switching. Practical implications for product and GTM teams included.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/STK_414_AI_CHATBOT_R2_CVirginia_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;An internal OpenAI memo stresses locking users and expanding enterprise accounts to blunt model switching. Practical implications for product and GTM teams included.&lt;/p&gt;</content>
+    <category term="gtm-execution" />
+  </entry>
+  <entry>
+    <title>Microsoft Trials OpenClaw-Style Agents to Make Copilot Autonomous</title>
+    <link href="https://originae.org/insights/microsoft-trials-openclaw-style-agents-copilot" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/microsoft-trials-openclaw-style-agents-copilot</id>
+    <published>2026-04-13T15:41:09.000Z</published>
+    <updated>2026-04-14T15:36:16.413Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Microsoft is exploring OpenClaw-style, locally running agents for Microsoft 365 Copilot to enable continuous autonomous task execution — raising operational and security trade-offs.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;Microsoft is exploring OpenClaw-style, locally running agents for Microsoft 365 Copilot to enable continuous autonomous task execution — raising operational and security trade-offs.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Meta’s Zuckerberg AI: what founders and CTOs should watch</title>
+    <link href="https://originae.org/insights/meta-zuckerberg-ai-clone-what-founders-ctos-should-watch" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/meta-zuckerberg-ai-clone-what-founders-ctos-should-watch</id>
+    <published>2026-04-13T13:40:03.000Z</published>
+    <updated>2026-04-14T15:36:16.414Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Meta is reportedly training an AI avatar of Mark Zuckerberg to interact with employees and may extend creator avatars if successful — here’s the operational playbook.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546252/STK169_Mark_Zuckerburg_CVIRGINIA_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;Meta is reportedly training an AI avatar of Mark Zuckerberg to interact with employees and may extend creator avatars if successful — here’s the operational playbook.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Operational security lessons from attacks on Sam Altman&#39;s home</title>
+    <link href="https://originae.org/insights/security-lessons-attacks-altman-home" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/security-lessons-attacks-altman-home</id>
+    <published>2026-04-13T09:25:57.000Z</published>
+    <updated>2026-04-14T15:36:16.414Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">Two incidents at Sam Altman&#39;s Russian Hill home in one weekend — a shooting and a Molotov attack — expose rapid escalation risks and concrete operational gaps for high‑profile individuals.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25431700/STK201_SAM_ALTMAN_CVIRGINIA_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;Two incidents at Sam Altman&#39;s Russian Hill home in one weekend — a shooting and a Molotov attack — expose rapid escalation risks and concrete operational gaps for high‑profile individuals.&lt;/p&gt;</content>
+    <category term="case-notes" />
+  </entry>
+  <entry>
+    <title>How engineering teams should respond as the AI code wars intensify</title>
+    <link href="https://originae.org/insights/engineering-teams-respond-ai-code-wars" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/engineering-teams-respond-ai-code-wars</id>
+    <published>2026-04-12T12:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.414Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">AI-assisted coding tools began by autocompleting lines for developers; now the competitive landscape is accelerating. Practical steps for teams to adopt, measure, and govern these tools.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/268441_AI_CODING_RACE_CVIRGINIA.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;AI-assisted coding tools began by autocompleting lines for developers; now the competitive landscape is accelerating. Practical steps for teams to adopt, measure, and govern these tools.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>Why the ‘Generated using A.I.’ Credit Matters for Editorial Visuals</title>
+    <link href="https://originae.org/insights/why-generated-using-ai-credit-matters" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/why-generated-using-ai-credit-matters</id>
+    <published>2026-04-11T15:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.415Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">A New Yorker illustration of Sam Altman carried an explicit &#39;Generated using A.I.&#39; credit. That choice signals practical editorial and product decisions founders and operators should parse.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/268452_New_Yorker_AI_art_CVirginia3.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;A New Yorker illustration of Sam Altman carried an explicit &#39;Generated using A.I.&#39; credit. That choice signals practical editorial and product decisions founders and operators should parse.&lt;/p&gt;</content>
+    <category term="case-notes" />
+  </entry>
+  <entry>
+    <title>When an AI plushie repeats a rumor: design lessons for companion bots</title>
+    <link href="https://originae.org/insights/when-an-ai-plushie-repeats-a-rumor-design-lessons-for-companion-bots" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/when-an-ai-plushie-repeats-a-rumor-design-lessons-for-companion-bots</id>
+    <published>2026-04-11T14:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.415Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">An AI companion in the body of a baby-deer plush relayed an unverified claim about Mitski’s family. A close read exposes product, trust and moderation gaps operators must address.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/268430_AI_deer_plushie_AKrales_0012.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" /&gt;&lt;p&gt;An AI companion in the body of a baby-deer plush relayed an unverified claim about Mitski’s family. A close read exposes product, trust and moderation gaps operators must address.&lt;/p&gt;</content>
+    <category term="product-delivery" />
+  </entry>
+  <entry>
+    <title>When Narrative Ops Matter: What Iran’s Media Response Teaches Operators</title>
+    <link href="https://originae.org/insights/narrative-ops-iran-media-response" rel="alternate" type="text/html" />
+    <id>https://originae.org/insights/narrative-ops-iran-media-response</id>
+    <published>2026-04-11T13:00:00.000Z</published>
+    <updated>2026-04-14T15:36:16.415Z</updated>
+    <author><name>Originae Editorial</name></author>
+    <summary type="html">During the early days of the Iran conflict, official US social posts landed as memes while Iranian state media saturated channels with raw battlefield footage—an operational lesson in narrative control.</summary>
+    <content type="html">&lt;img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Vrg_illo_k_radtke_shitpost_iran_white_house.jpg?quality=90&amp;strip=all&amp;crop=0%2C6.369982547993%2C100%2C87.260034904014&amp;w=1200" alt="" /&gt;&lt;p&gt;During the early days of the Iran conflict, official US social posts landed as memes while Iranian state media saturated channels with raw battlefield footage—an operational lesson in narrative control.&lt;/p&gt;</content>
+    <category term="operations-automation" />
+  </entry>
+</feed>

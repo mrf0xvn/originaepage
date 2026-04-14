@@ -1,0 +1,36 @@
+# Originae
+
+> Originae is a Swiss-led execution partner for startups and growth-stage companies. We bridge the gap between strategy and delivery across marketing, operations, business development, and product work.
+
+## About
+
+Originae provides managed execution services. We operate as an embedded team, not an agency. Our work spans growth systems, GTM execution, operations automation, and product delivery.
+
+- [Homepage](https://originae.org/)
+- [Insights (Blog)](https://originae.org/insights)
+- [RSS Feed](https://originae.org/feed.xml)
+
+## Services
+
+- Marketing — Messaging, demand systems, and repeatable growth mechanics
+- Operations — Execution systems, process design, and workflow automation
+- Business Development — Outbound motion, pipeline building, and GTM operating notes
+- Product & Technology — Applied AI, systems integration, and delivery decisions
+
+## Insights
+
+Editorial notes for operators who ship. Curated observations across systems, GTM, delivery, and strategic execution.
+
+- [EU trì hoãn luật AI, ủng hộ cấm ứng dụng tạo ảnh khỏa thân](https://originae.org/insights/eu-tri-hoan-luat-ai-ung-ho-cam-ung-dung-tao-anh-khoa-than): Nghị viện châu Âu vừa thông qua đề xuất trì hoãn thời hạn tuân thủ các quy định chính trong Đạo luật AI, đồng thời ủng hộ lệnh cấm các ứng dụng tạo ảnh khỏa thâ
+- [AI luôn nói bạn đúng — và đó chính là mối nguy hiểm mà ít ai nhận ra](https://originae.org/insights/ai-luon-noi-ban-dung-va-do-chinh-la-moi-nguy-hiem-ma-it-ai-nhan-ra): Nghiên cứu từ Stanford phát hiện AI 'nịnh hót' đang khiến người dùng tự cao hơn, ít chịu xin lỗi hơn và ngày càng tin tưởng vào những lời khuyên sai lệch. Người
+- [Railway huy động 100 triệu USD: Cơ hội vàng cho startup AI Việt Nam thoát lệ thuộc AWS](https://originae.org/insights/railway-huy-đong-100-trieu-usd-co-hoi-vang-cho-startup-ai-viet-nam-thoat-le-thuoc-aws): Railway, nền tảng cloud 'thân AI' vừa gọi 100 triệu USD, hứa hẹn thách thức AWS. Đây là cơ hội để các startup và lập trình viên Việt Nam tiếp cận giải pháp clou
+- [ChatGPT Nhận 600.000 Câu Hỏi Sức Khỏe Mỗi Tuần Từ Vùng Thiếu Bác Sĩ](https://originae.org/insights/chatgpt-nhan-600000-cau-hoi-suc-khoe-moi-tuan-tu-vung-thieu-bac-si): Người dùng Mỹ gửi hàng triệu tin nhắn về sức khỏe cho ChatGPT mỗi tuần, với 600.000 câu hỏi đến từ các khu vực khó tiếp cận bệnh viện. 7/10 câu hỏi được đặt ngo
+- [CIA hé lộ kế hoạch đưa trợ lý AI vào mọi hệ thống phân tích tình báo](https://originae.org/insights/cia-he-lo-ke-hoach-dua-tro-ly-ai-vao-moi-he-thong-phan-tich-tinh-bao): CIA vừa tạo ra báo cáo tình báo đầu tiên hoàn toàn tự động bằng AI và đang lên kế hoạch tích hợp trợ lý AI vào mọi nền tảng phân tích. Động thái này đánh dấu bư
+- [Khoảng Trống Dữ Liệu Cộng Đồng: Rào Cản Lớn Cho Startup Việt Trong Nghiên Cứu Thị Trường Và Gọi Vốn](https://originae.org/insights/khoang-trong-du-lieu-cong-dong-rao-can-lon-cho-startup-viet-trong-nghien-cuu-thi-truong-va-goi-von): Các startup Việt Nam đang đối mặt với thách thức lớn do thiếu nguồn dữ liệu cộng đồng chất lượng. Điều này cản trở nghiên cứu thị trường chính xác và làm giảm s
+- [Alibaba tìm ra lỗ hổng trong cách AI học suy luận, tăng độ dài tư duy gấp đôi](https://originae.org/insights/alibaba-tim-ra-lo-hong-trong-cach-ai-hoc-suy-luan-tang-do-dai-tu-duy-gap-doi): Nhóm Qwen của Alibaba phát triển thuật toán FIPO, giúp AI phân bổ điểm thưởng chính xác hơn cho từng bước suy nghĩ. Điều này không chỉ kéo dài quá trình tư duy 
+- [AI và Con Người: Thước Đo Mới Về Khoảng Cách Trí Tuệ Trong Kỷ Nguyên Số](https://originae.org/insights/ai-va-con-nguoi-thuoc-do-moi-ve-khoang-cach-tri-tue-trong-ky-nguyen-so): Các chuyên gia cảnh báo hạ tầng số và thuật toán đang định hình tư duy, kinh tế đến nền dân chủ. Vấn đề cốt lõi được đặt ra là con người sẽ giữ được bao nhiêu n
+
+## Contact
+
+- Email: hello@originae.org
+- Website: https://originae.org

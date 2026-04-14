@@ -2,6 +2,10 @@
 module.exports = {
   content: [
     "./*.{js,jsx,ts,tsx}",
+    "./site/**/*.{js,jsx,ts,tsx}",
+    "./insights/**/*.{js,jsx,ts,tsx}",
+    "./content/**/*.{js,jsx,ts,tsx}",
+    "./scripts/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
